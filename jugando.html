@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Final JavaScript Avanzado</title>
+    <link rel="stylesheet" href="./CSS/Stylos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <svg  width="200" height="80">
+                <rect id="pantalla_1" x="38" y="5" width="53" height="28" rx="3" fill="#3F6797"></rect>
+            <rect id="pantalla_2" x="43" y="10" width="43" height="18" rx="3" fill="#B1D5E4"></rect>
+            <polygon id="teclado_1" points="48 38 ,88 47,108 55,23 55" fill="#3F6797"></polygon>
+            <polygon id="teclado_2" points="50 41 ,85 41,97 51,36 51" fill="#B1D5E4"></polygon>
+            </svg>
+        </a>
+        <ul class="botonera">
+            <li class="itemMenu">
+                <a class= "linkMenu" href="historia.html">HISTORIA</a>
+            </li>
+            <li class="itemMenu">
+                <a class= "linkMenu" href="jugando.html">JUGUEMOS</a>
+            </li>
+        </ul>
+    </nav>
+<header>
+    <h1 class="titulo-h1">JUGUEMOS UN POCO</h1>
+
+</header>
+<h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+<main>
+    
+    <section class="jugando">
+        <div class="rectangulos_1">
+            <div id="caja_1">
+                <p>Arrastre y suelte la imágene aquí</p>
+            </div>
+            <div id="caja_2">
+                <p>Arrastre y suelte la imágene aquí</p>
+            </div>
+            <div id="caja_3">
+                <p>Arrastre y suelte la imágene aquí</p>
+            </div>
+        </div>
+        <div id="rectangulos_2">
+            <img id="imagen1" src="./assets/imagenes/rompe2.png" />
+            <img id="imagen2" src="./assets/imagenes/Rompe1.png" />
+            <img id="imagen3" src="./assets/imagenes/Rompe3.png" />
+        </div>
+    </section>
+    <button onclick="reinicio()" class="reinicio" >Reiniciar</button>
+</main>
+<script src="./comportamiento.js"></script>
+</body>
+</html>
